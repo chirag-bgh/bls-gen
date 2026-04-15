@@ -15,14 +15,6 @@ pub fn gen_bls_keypair() {
     println!("BLS Public Key: {}, len: {}", pk_hex, pk_hex.len() / 2);
 }
 
-fn sdf() {
-    let sk = SecretKey::from
-    let pk = sk.sk_to_pk();
-    let pk_hex = hex::encode(pk.to_bytes());
-    println!("BLS Public Key: {}, len: {}", pk_hex, pk_hex.len() / 2);
-
-
-}
 fn main() {
-    sdf()
+    gen_bls_keypair()
 }
